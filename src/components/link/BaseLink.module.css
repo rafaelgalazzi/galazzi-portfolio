@@ -1,0 +1,9 @@
+.linkStyle {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.linkStyle:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
