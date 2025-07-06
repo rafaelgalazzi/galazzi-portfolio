@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "title": "Hi, I'm Rafael",
+    "description": "A Full-Stack developer passionate about creating beautiful and accessible digital experiences.",
+    "cta": "Get in touch"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
