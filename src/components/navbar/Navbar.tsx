@@ -24,7 +24,6 @@ export default function Navbar() {
   const handleThemeToggle = () => {
     toggleTheme();
     const isLight = document.documentElement.classList.contains('light');
-    console.log(isLight);
     setTheme(isLight ? 'light' : 'dark');
   };
 
