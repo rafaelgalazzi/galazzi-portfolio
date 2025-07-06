@@ -46,7 +46,7 @@ export default function BaseDropdown({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -6 }}
           transition={{ duration: 0.15 }}
-          className={`absolute top-full left-0 w-full bg-zinc-50 dark:bg-zinc-900 shadow-md px-4 py-4 z-40 ${className}`}
+          className={`absolute top-full left-0 w-full bg-dropdown text-foreground shadow-md px-4 py-4 z-40 ${className}`}
         >
           {children}
         </motion.div>

@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Hi, I'm Rafael",
+    "title": "Hi, I'm Rafael Galazzi",
     "description": "A Full-Stack developer passionate about creating beautiful and accessible digital experiences.",
     "cta": "Get in touch"
   },
@@ -9,5 +9,13 @@
     "about": "About",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "footer": {
+    "copy": "© {{year}} Rafael Galazzi. All rights reserved.",
+      "social": {
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "contact": "Contact"
+      }
   }
 }

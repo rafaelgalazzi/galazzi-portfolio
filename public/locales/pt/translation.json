@@ -1,13 +1,21 @@
 {
-  "hero": {
-    "title": "Olá, sou Rafael",
-    "description": "Desenvolvedor Full-Stack apaixonado por criar experiências digitais bonitas e acessíveis.",
-    "cta": "Fale comigo"
-  },
-  "nav": {
-    "home": "Home",
-    "about": "Sobre",
-    "projects": "Projetos",
-    "contact": "Contato"
+    "hero": {
+        "title": "Olá, sou Rafael Galazzi",
+        "description": "Desenvolvedor Full-Stack apaixonado por criar experiências digitais bonitas e acessíveis.",
+        "cta": "Fale comigo"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "footer": {
+        "copy": "© {{year}} Rafael Galazzi. Todos os direitos reservados.",
+        "social": {
+            "github": "GitHub",
+            "linkedin": "LinkedIn",
+            "contact": "Contato"
+        }
   }
 }
