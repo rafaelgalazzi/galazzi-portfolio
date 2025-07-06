@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Navbar />
             <HeroSection />
             <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            {children}
+                {children}
             </main>
             <Footer />
         </I18nProvider>

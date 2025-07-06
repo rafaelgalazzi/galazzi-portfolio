@@ -6,11 +6,12 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpBackend from 'i18next-http-backend';
 
 i18n
-  .use(HttpBackend) // carrega os arquivos JSON
-  .use(LanguageDetector) // detecta idioma do navegador ou localStorage
+  .use(HttpBackend)
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     fallbackLng: 'pt',
+    supportedLngs: ['en', 'pt'],
     debug: false,
     interpolation: {
       escapeValue: false,
@@ -18,6 +19,9 @@ i18n
     backend: {
       loadPath: '/locales/{{lng}}/translation.json',
     },
+    react: {
+      useSuspense: false
+    }
   });
 
 export default i18n;

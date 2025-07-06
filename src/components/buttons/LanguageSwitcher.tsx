@@ -6,16 +6,15 @@ export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
 
   const options = [
-    { label: "Pt", value: "pt" },
-    { label: "En", value: "en" },
+    { label: "PT", value: "pt" },
+    { label: "EN", value: "en" },
   ];
 
   return (
     <BaseSelect
-      label=""
       value={i18n.language}
       options={options}
-      onChange={(e) => i18n.changeLanguage(e.target.value)}
+      onChange={(e) => i18n.changeLanguage(e)}
     />
   );
 }

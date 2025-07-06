@@ -1,4 +1,9 @@
-import React from "react";
+'use client';
+
+import { useState } from 'react';
+import BaseDropdown from '../menus/BaseDropdown';
+import BaseIcon from '../icons/BaseIcon';
+import BaseText from '../text/BaseText';
 
 interface Option {
   label: string;
@@ -6,29 +11,52 @@ interface Option {
 }
 
 interface SelectProps {
-  label: string;
+  label?: string;
   value: string;
   options: Option[];
-  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  onChange: (value: string) => void;
 }
 
-export default function BaseSelect(props: SelectProps) {
+export default function BaseSelect({ label, value, options, onChange }: SelectProps) {
+  const [open, setOpen] = useState(false);
+  const selected = options.find(opt => opt.value === value);
+
+  const handleSelect = (val: string) => {
+    onChange(val);
+    setOpen(false);
+  };
+
   return (
-    <div className="flex flex-col gap-1">
-      <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
-        {props.label}
-      </label>
-      <select
-        value={props.value}
-        onChange={props.onChange}
-        className="border border-zinc-300 dark:border-zinc-700 rounded-md px-3 py-2 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+    <div className="relative inline-block">
+      {label && <label className="block text-sm font-medium mb-1">{label}</label>}
+
+      <button
+        type="button"
+        onClick={() => setOpen(prev => !prev)}
+        className="px-3 py-2 border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-left rounded-md flex justify-between items-center gap-2"
       >
-        {props.options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
+        <span className="truncate">{selected?.label || 'Selecionar'}</span>
+        <BaseIcon name="chevron-down" size={18} />
+      </button>
+
+      <BaseDropdown 
+        isOpen={open}
+        onClickOutside={() => setOpen(false)}
+      >
+        <ul className="flex flex-col text-sm">
+          {options.map(option => (
+            <li key={option.value}>
+              <button
+                type="button"
+                onClick={() => handleSelect(option.value)}
+                className={`w-full text-left py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800`}
+              >
+                <BaseText justify='center'>{option.label}</BaseText>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </BaseDropdown>
     </div>
   );
 }
