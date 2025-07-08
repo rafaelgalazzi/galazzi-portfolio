@@ -3,7 +3,6 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import "../i18n";
-import HeroSection from "@/components/HeroSection";
 import I18nProvider from "@/components/i18nProvider";
 
 export const metadata: Metadata = {
@@ -18,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <I18nProvider>
                 <div className="flex flex-col min-h-screen w-full">
                     <Navbar />
-                    <HeroSection />
                     <main className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                         {children}
                     </main>
