@@ -3,12 +3,13 @@ interface BaseTextProps {
     children: React.ReactNode,
     justify?: 'left' | 'center' | 'right',
     fontSize?: 'sm' | 'md' | 'lg',
-    fontWeight?: 'normal' | 'bold'
+    fontWeight?: 'normal' | 'bold',
+    color?: string
 }
 
 
-export default function BaseText(props: BaseTextProps) {
-    const fontSizes = {
+export default function BaseText({ children, justify = 'left', fontSize = 'md', fontWeight = 'normal', color= 'white' }: BaseTextProps) {
+    const fontSizesMap = {
         xs: 'text-xs',
         sm: 'text-sm',
         md: 'text-base',
@@ -17,20 +18,20 @@ export default function BaseText(props: BaseTextProps) {
         xxl: 'text-2xl',
     }
 
-    const fontWeights = {
+    const fontWeightsMap = {
         normal: 'font-weight-400',
         bold: 'font-weight-700'
     }
 
-    const justify = {
+    const justifyMap = {
         left: 'text-left',
         center: 'text-center',
         right: 'text-right'
     }
 
     return (
-        <div className={`${justify[props.justify || 'left']} ${fontSizes[props.fontSize || 'md']} ${fontWeights[props.fontWeight || 'normal']}` }>
-            {props.children}
+        <div className={`${justifyMap[justify]} ${fontSizesMap[fontSize]} ${fontWeightsMap[fontWeight]} text-${color}` }>
+            {children}
         </div>
     );
 }

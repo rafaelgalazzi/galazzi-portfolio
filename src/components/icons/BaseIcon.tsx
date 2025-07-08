@@ -9,6 +9,8 @@ interface BaseIconProps extends LucideProps {
   size?: number;
   className?: string;
   circle?: boolean;
+  bgColor?: string;
+  fill?: string;
 }
 
 export default function BaseIcon({
@@ -17,6 +19,8 @@ export default function BaseIcon({
   size = 20,
   className = '',
   circle = false,
+  bgColor = 'button',
+  fill,
   ...props
 }: BaseIconProps) {
   if (!name) {
@@ -28,6 +32,7 @@ export default function BaseIcon({
     <DynamicIcon
       name={name}
       size={size}
+      fill={fill ?? 'none'}
       color={color ?? 'currentColor'}
       {...props}
     />
@@ -38,11 +43,15 @@ export default function BaseIcon({
   }
 
   return (
-    <span
+    <div
       className={`inline-flex items-center justify-center rounded-full bg-button text-button-foreground transition-colors duration-300 ${className}`}
-      style={{ width: size + 16, height: size + 16 }}
+      style={{ 
+        backgroundColor: `var(--${bgColor})`,
+        width: size + 16,
+        height: size + 16 
+        }}
     >
       {icon}
-    </span>
+    </div>
   );
 }

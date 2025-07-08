@@ -35,7 +35,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full px-4 py-4 border-b border-border bg-navbar text-foreground relative z-50">
+    <nav className="w-full px-4 py-3 border-b border-border bg-navbar text-foreground relative z-50">
       <div className="flex items-center justify-between w-full">
         <div className="lg:hidden">
           <button
