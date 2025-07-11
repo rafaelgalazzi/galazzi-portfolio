@@ -19,6 +19,7 @@
   --linkedin: #0077b5;
   --error: #b3261e;
   --pure-white: #ffffff;
+  --text-white: #ffffff;
 }
 
 .light {
@@ -38,6 +39,7 @@
   --linkedin: #0077b5;
   --error: #b3261e;
   --pure-white: #ffffff;
+  --text-white: #333333;
 }
 
 * {

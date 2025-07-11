@@ -4,11 +4,11 @@ interface BaseTextProps {
     justify?: 'left' | 'center' | 'right',
     fontSize?: 'sm' | 'md' | 'lg',
     fontWeight?: 'normal' | 'bold',
-    color?: string
+    color?: string 
 }
 
 
-export default function BaseText({ children, justify = 'left', fontSize = 'md', fontWeight = 'normal', color= 'white' }: BaseTextProps) {
+export default function BaseText({ children, justify = 'left', fontSize = 'md', fontWeight = 'normal', color= 'text-white' }: BaseTextProps) {
     const fontSizesMap = {
         xs: 'text-xs',
         sm: 'text-sm',

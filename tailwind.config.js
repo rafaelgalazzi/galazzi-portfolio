@@ -24,6 +24,7 @@ module.exports = {
         linkedin: 'var(--linkedin)',
         error: 'var(--error)',
         'pure-white': 'var(--pure-white)',
+        'text-white': 'var(--text-white)',
       },
     },
   },
