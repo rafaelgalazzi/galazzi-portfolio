@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description: "Full-Stack developer.",
 };
 
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt" suppressHydrationWarning>

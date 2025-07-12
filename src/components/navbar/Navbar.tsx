@@ -29,13 +29,13 @@ export default function Navbar() {
 
   const links = [
     { name: t('nav.home'), href: '/' },
-    { name: t('nav.projects'), href: '/projects' },
     { name: t('nav.about'), href: '/about' },
+    { name: t('nav.projects'), href: '/projects' },
     { name: t('nav.contact'), href: '/contact' },
   ];
 
   return (
-    <nav className="w-full px-4 py-3 border-b border-border bg-navbar text-foreground relative z-50">
+    <nav className="w-full px-4 py-3 border-b border-border bg-navbar text-foreground sticky top-0 z-50">
       <div className="flex items-center justify-between w-full">
         <div className="lg:hidden">
           <button

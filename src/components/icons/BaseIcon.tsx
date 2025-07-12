@@ -44,7 +44,7 @@ export default function BaseIcon({
 
   return (
     <div
-      className={`inline-flex items-center justify-center rounded-full bg-button text-button-foreground transition-colors duration-300 ${className}`}
+      className={`inline-flex items-center justify-center rounded-full bg-button text-button-foreground hover:opacity-70 transition-colors duration-300 ${className}`}
       style={{ 
         backgroundColor: `var(--${bgColor})`,
         width: size + 16,

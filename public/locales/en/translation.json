@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Hi, I'm Rafael Galazzi",
-    "description": "A Full-Stack developer passionate about creating beautiful and accessible digital experiences.",
+    "description": "A Full-Stack developer passionate about creating beautiful and accessible digital experiences. Always looking for new challenges and opportunities to learn and grow as a professional developer.",
     "cta": "Get in touch"
   },
   "nav": {
@@ -17,5 +17,80 @@
         "linkedin": "LinkedIn",
         "contact": "Contact"
       }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Passionate Full-Stack Developer with over {{timeSinceStart}} years of experience building high-performance web applications across real estate, education, and healthcare sectors. Specialized in TypeScript, React.js, Vue.js, and Node.js with a focus on clean and scalable architecture. Demonstrated success in improving system performance, UX, and development efficiency through modular, maintainable code.",
+    "education": {
+      "title": "Education",
+      "description": "Bachelor of Chemical Engineering – Faculdade UCL (2015–2021)",
+      "comment": "Developed transferable skills such as teamwork, problem-solving, and programming fundamentals."
+    },
+    "certifications": {
+      "title": "Certifications",
+      "course1": "Node.js: Advanced Concepts – Udemy (Jun 2025)",
+      "course2": "The Last Algorithms Course You'll Need – Frontend Masters (Nov 2024)",
+      "course3": "The Complete SQL Bootcamp – Udemy (Jan 2025)"
+    },
+    "additionalCourses": {
+      "title": "Additional Courses",
+      "course1": {
+        "title": "Vue.js Program – Alura (2021–2022) – 50h",
+        "description": "SPA development, authentication with Vuex, unit testing with Jest."
+      },
+      "course2": {
+        "title": "TypeScript Program – Alura (2023) – 31h",
+        "description": "JavaScript migration, typing, advanced practices, API mocking."
+      },
+      "course3": {
+        "title": "Vue 3 Framework – Alura (2023) – 27h",
+        "description": "Composition API, Vuex, tooling and environment setup."
+      },
+      "course4": {
+        "title": "PHP OOP & Composer – Alura (2021) – 36h",
+        "description": "Classes, inheritance, error handling, dependencies, and autoloading."
+      },
+      "course5": {
+        "title": "Node.js ORM with Sequelize – Alura (2021–2022) – 20h",
+        "description": "Database access patterns using MySQL and Sequelize."
+      },
+      "course6": {
+        "title": "Front-End Foundations & Tailwind CSS – Alura (2023) – 24h",
+        "description": "HTML5, CSS3, Flexbox, utility-based styling."
+      },
+      "course7": {
+        "title": "MongoDB for Developers – Alura (2021) – 6h",
+        "description": "Non-relational data modeling and querying."
+      },
+      "course8": {
+        "title": "Computer Architecture Basics – Alura (2023) – 8h"
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "language1": {
+        "name": "Português",
+        "level": "Native"
+      },
+      "language2": {
+        "name": "English",
+        "level": "Fluent"
+      },
+      "language3": {
+        "name": "Spanish",
+        "level": "Advanced"
+      },
+      "language4": {
+        "name": "Japanese",
+        "level": "Advanced"
+      }
+    }
+  },
+  "slider": {
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "projects": {
+    "title": "Projects"
   }
 }

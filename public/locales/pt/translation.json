@@ -17,5 +17,80 @@
             "linkedin": "LinkedIn",
             "contact": "Contato"
         }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Desenvolvedor Full-Stack apaixonado, com mais de {{timeSinceStart}} anos de experiência na construção de aplicações web de alto desempenho para os setores imobiliário, educacional e de saúde. Especializado em TypeScript, React.js, Vue.js e Node.js, com foco em arquiteturas limpas e escaláveis. Histórico comprovado de melhorias significativas em performance de sistemas, experiência do usuário e eficiência de desenvolvimento por meio de código modular e bem estruturado.",
+    "education": {
+      "title": "Formação Acadêmica",
+      "description": "Bacharelado em Engenharia Química - Faculdade UCL (2015 - 2021)",
+      "comment": "Desenvolveu habilidades transferíveis como trabalho em equipe, resolução de problemas efundamentos de programação."
+    },
+    "certifications": {
+      "title": "Certificações",
+      "course1": "Node.js: Conceitos Avançados – Udemy (Emitido em Jun 2025)",
+      "course2": "O Último Curso de Algoritmos que Você Vai Precisar – Frontend Masters (Emitido em Nov 2024)",
+      "course3": "Bootcamp Completo de SQL – Udemy (Emitido em Jan 2025)"
+    },
+    "additionalCourses": {
+      "title": "Cursos Complementares",
+      "course1": {
+        "title": "Formação Vue.js – Alura (2021–2022) – 50h",
+        "description": "SPA, autenticação com Vuex, testes unitários com Jest"
+      },
+      "course2": {
+        "title": "Formação TypeScript – Alura (2023) – 31h",
+        "description": "Boas práticas de tipagem, migração JavaScript, mock de APIs"
+      },
+      "course3": {
+        "title": "Formação Vue.js 3 – Alura (2023) – 27h",
+        "description": "Composition API, Vuex, preparação de ambiente com Vue 3"
+      },
+      "course4": {
+        "title": "PHP Orientado a Objetos & Composer – Alura (2021) – 36h",
+        "description": "Classes, herança, tratamento de exceções, dependências."
+      },
+      "course5": {
+        "title": "ORM com Node.js e Sequelize – Alura (2021–2022) – 20h",
+        "description": "Integração de banco com MySQL e Sequelize."
+      },
+      "course6": {
+        "title": "HTML, CSS e Tailwind – Alura (2023) – 24h",
+        "description": "HTML5, CSS3, Flexbox, Tailwind CSS com classes utilitárias."
+      },
+      "course7": {
+        "title": "MongoDB para Desenvolvedores – Alura (2021) – 6h",
+        "description": "Modelagem de dados e consulta ao banco de dados não-relacional."
+      },
+      "course8": {
+        "title": "Arquitetura de Computadores – Alura (2023) – 8h"
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "language1": {
+        "name": "Português",
+        "level": "Nativo"
+      },
+      "language2": {
+        "name": "Inglês",
+        "level": "Fluente"
+      },
+      "language3": {
+        "name": "Espanhol",
+        "level": "Avançado"
+      },
+      "language4": {
+        "name": "Japones",
+        "level": "Avançado"
+      }
+    }
+  },
+  "slider": {
+    "previous": "Anterior",
+    "next": "Próximo"
+  },
+  "projects": {
+    "title": "Projetos"
   }
 }

@@ -11,7 +11,7 @@
   --secondary: #d4d4d8;
   --accent: #fb923c;
   --button: #ffffff;
-  --button-foreground: #000000;
+  --button-foreground: #333333;
   --dropdown: #1a1a1a;       /* mais claro que o background escuro */
   --dropdown-hover: #2a2a2a; /* realce sutil ao passar o mouse */
   --navbar: #1f1f1f;
@@ -48,7 +48,8 @@
     color 0.3s ease,
     border-color 0.3s ease,
     fill 0.3s ease,
-    stroke 0.3s ease;
+    stroke 0.3s ease,
+    opacity 0.3s ease;
 }
 
 

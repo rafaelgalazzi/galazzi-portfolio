@@ -9,9 +9,9 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="w-full border-t border-border px-4 py-3 text-sm text-center bg-footer text-foreground">
+    <footer className="w-full border-t border-border px-4 py-3 text-sm text-center sticky bottom-0 bg-footer text-foreground">
       <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-        <BaseText fontSize="sm" color="text-white">
+        <BaseText fontSize="sm" color="muted">
           {t("footer.copy", { year: new Date().getFullYear() })}
         </BaseText>
 
