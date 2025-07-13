@@ -17,21 +17,21 @@ export default function BaseSlider({ slides, autoPlay = false, interval = 5000 }
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+        setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
     };
 
     const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+        setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
     };
 
     useEffect(() => {
-    if (!autoPlay) return;
+        if (!autoPlay) return;
 
-    const timer = setInterval(() => {
-        setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, interval);
+        const timer = setInterval(() => {
+            setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+        }, interval);
 
-    return () => clearInterval(timer);
+        return () => clearInterval(timer);
     }, [autoPlay, interval, slides.length]);
 
     return (
@@ -47,7 +47,7 @@ export default function BaseSlider({ slides, autoPlay = false, interval = 5000 }
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
             className="max-w-3xl mx-auto"
         >
             {slides[currentSlide]}
