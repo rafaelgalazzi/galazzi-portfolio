@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # Ambiente de DESENVOLVIMENTO -------------
+  web-dev:
+    container_name: portfolio-dev
+    build:
+      context: .
+      dockerfile: ./dockerfile.dev
+      target: builder                   # Usa o estágio builder com dependências completas
+    command: npm run dev               # Executa o servidor de desenvolvimento com hot reload
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app                         # Monta seu código local
+      - /app/node_modules              # Evita conflitos entre host e container
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+
+  # Ambiente de PRODUÇÃO --------------------
+  web-prod:
+    container_name: portfolio-prod
+    build:
+      context: .
+      dockerfile: ./dockerfile           # Usa a imagem final do Dockerfile (runner)
+    command: npm start
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1

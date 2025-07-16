@@ -1,20 +1,20 @@
 'use client';
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-const projects = [
-  'Easy Access',
-  'Tohodenki',
-  'Cootraporter',
-  'Medme-Hilab',
-  'Egnex/Nexomobi Charge Control',
-  'Octo',
-  'House DO'
-];
+// const projects = [
+//   'Easy Access',
+//   'Tohodenki',
+//   'Cootraporter',
+//   'Medme-Hilab',
+//   'Egnex/Nexomobi Charge Control',
+//   'Octo',
+//   'House DO'
+// ];
 
 
 export default function Projects() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
     <>
       <motion.section

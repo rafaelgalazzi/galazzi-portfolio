@@ -35,29 +35,35 @@ export default function BaseSlider({ slides, autoPlay = false, interval = 5000 }
     }, [autoPlay, interval, slides.length]);
 
     return (
-    <motion.section
-        initial={{ opacity: 0, y: 0, x: -50 }}
-        animate={{ opacity: 1, y: 0, x: 0 }}
-        transition={{ duration: 0.5 }}
-        className="relative text-center px-4 py-16 sm:py-24 text-foreground"
-    >
-        <AnimatePresence mode="wait">
-        <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.7 }}
-            className="max-w-3xl mx-auto"
-        >
-            {slides[currentSlide]}
-        </motion.div>
-        </AnimatePresence>
 
-        <div className="mt-8 flex justify-center gap-4">
-        <BaseButton onClick={prevSlide}>{t("slider.previous")}</BaseButton>
-        <BaseButton onClick={nextSlide}>{t("slider.next")}</BaseButton>
-        </div>
-    </motion.section>
+        <>
+            { slides.length && 
+                <motion.section
+                    initial={{ opacity: 0, y: 0, x: -50 }}
+                    animate={{ opacity: 1, y: 0, x: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="relative text-center px-4 py-16 sm:py-24 text-foreground"
+                >
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={currentSlide}
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -50 }}
+                            transition={{ duration: 0.7 }}
+                            className="max-w-3xl mx-auto min-h-[300px]"
+                        >
+                            {slides[currentSlide]}
+                        </motion.div>
+                    </AnimatePresence>
+
+                    <div className="mt-8 flex justify-center gap-4">
+                        <BaseButton onClick={prevSlide}>{t("slider.previous")}</BaseButton>
+                        <BaseButton onClick={nextSlide}>{t("slider.next")}</BaseButton>
+                    </div>
+                </motion.section>
+            }
+        </>
+    
     );
 }
