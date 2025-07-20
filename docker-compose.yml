@@ -23,7 +23,7 @@ services:
     container_name: portfolio-prod
     build:
       context: .
-      dockerfile: ./dockerfile           # Usa a imagem final do Dockerfile (runner)
+      dockerfile: ./dockerfile.prod           # Usa a imagem final do Dockerfile (runner)
     command: npm start
     ports:
       - "3000:3000"
