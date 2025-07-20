@@ -63,7 +63,8 @@
         "description": "Non-relational data modeling and querying."
       },
       "course8": {
-        "title": "Computer Architecture Basics – Alura (2023) – 8h"
+        "title": "Computer Architecture Basics – Alura (2023) – 8h",
+        "description": "Introduction to computer architecture and its components."
       }
     },
     "languages": {
@@ -92,5 +93,10 @@
   },
   "projects": {
     "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "I'm always open to new opportunities and collaborations. Don't hesitate to get in touch with me.",
+    "cta": "Send a message"
   }
 }

@@ -35,14 +35,13 @@ export default function BaseSlider({ slides, autoPlay = false, interval = 5000 }
     }, [autoPlay, interval, slides.length]);
 
     return (
-
         <>
             { slides.length && 
                 <motion.section
                     initial={{ opacity: 0, y: 0, x: -50 }}
                     animate={{ opacity: 1, y: 0, x: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="relative text-center px-4 py-16 sm:py-24 text-foreground"
+                    className="relative text-center px-4 sm:py-16 text-foreground"
                 >
                     <AnimatePresence mode="wait">
                         <motion.div
@@ -50,7 +49,7 @@ export default function BaseSlider({ slides, autoPlay = false, interval = 5000 }
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -50 }}
-                            transition={{ duration: 0.7 }}
+                            transition={{ duration: 0.5 }}
                             className="max-w-3xl mx-auto min-h-[300px]"
                         >
                             {slides[currentSlide]}
@@ -64,6 +63,5 @@ export default function BaseSlider({ slides, autoPlay = false, interval = 5000 }
                 </motion.section>
             }
         </>
-    
     );
 }

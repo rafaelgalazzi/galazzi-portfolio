@@ -12,7 +12,7 @@ export default function HeroSection() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
-      className="text-center px-4 py-16 sm:py-24 bg-background text-foreground"
+      className="text-center px-4 py-16 sm:py-16 text-foreground"
     >
       <BaseText fontSize="xxxl" justify="center" color="text-white">
         {t("hero.title")}

@@ -1,7 +1,7 @@
 {
     "hero": {
         "title": "Olá, sou Rafael Galazzi",
-        "description": "Desenvolvedor Full-Stack apaixonado por criar experiências digitais bonitas e acessíveis.",
+        "description": "Desenvolvedor Full-Stack apaixonado por criar experiências digitais bonitas e acessíveis. Sempre em busca de novos desafios e oportunidades para aprender e crescer como desenvolvedor profissional.",
         "cta": "Fale comigo"
     },
     "nav": {
@@ -63,7 +63,8 @@
         "description": "Modelagem de dados e consulta ao banco de dados não-relacional."
       },
       "course8": {
-        "title": "Arquitetura de Computadores – Alura (2023) – 8h"
+        "title": "Arquitetura de Computadores – Alura (2023) – 8h",
+        "description": "Introdução ao conceito de arquitetura de computadores e seus componentes."
       }
     },
     "languages": {
@@ -92,5 +93,10 @@
   },
   "projects": {
     "title": "Projetos"
+  },
+  "contato": {
+    "title": "Contato",
+    "description": "Estou sempre aberto para novas oportunidades e colaborações. Não hesite em me contatar.",
+    "cta": "Enviar mensagem"
   }
 }

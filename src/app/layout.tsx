@@ -14,17 +14,18 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt" suppressHydrationWarning>
-        <body className="scroll-smooth h-full w-full bg-background text-foreground overflow-x-hidden">
-            <I18nProvider>
-                <div className="flex flex-col min-h-screen w-full">
-                    <Navbar />
-                    <main className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                        {children}
-                    </main>
-                    <Footer />
-                </div>
-            </I18nProvider>
-        </body>
+      <body className="scroll-smooth h-full w-full bg-background text-foreground overflow-x-hidden">
+        <I18nProvider>
+          <div className="flex flex-col min-h-screen w-full" style={{ position: 'relative', zIndex: 1 }}>
+            <Navbar />
+            <main className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </I18nProvider>
+      </body>
     </html>
   );
 }
+
