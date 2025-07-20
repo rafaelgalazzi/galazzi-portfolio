@@ -1,5 +1,5 @@
 # Etapa 1: Construção do projeto
-FROM node:18-alpine AS builder
+FROM node:18-bullseye AS builder
 
 # Define o diretório de trabalho
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Etapa 2: Imagem final de produção
-FROM node:18-alpine AS runner
+FROM node:18-bullseye AS runner
 
 WORKDIR /app
 
