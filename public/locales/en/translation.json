@@ -143,6 +143,8 @@
         "label": "Message",
         "placeholder": "Your message here..."
       }
-    }
+    },
+    "sendMessage": "Send Message",
+    "sending": "Sending..."
   }
 }

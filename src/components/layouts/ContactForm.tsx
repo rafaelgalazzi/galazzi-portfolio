@@ -82,7 +82,7 @@ export default function ContactForm() {
         <div>
           <label htmlFor="name" className="block mb-2 text-sm font-medium">
             <BaseText fontSize="sm" color="foreground">
-              {t('contact.form.name')}
+              {t('contact.form.name.label')}
             </BaseText>
           </label>
           <Input
@@ -92,14 +92,14 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            placeholder="Your name"
+            placeholder= {t('contact.form.name.placeholder')}
           />
         </div>
 
         <div>
           <label htmlFor="email" className="block mb-2 text-sm font-medium">
             <BaseText fontSize="sm" color="foreground">
-              {t('contact.form.email')}
+              {t('contact.form.email.label')}
             </BaseText>
           </label>
           <Input
@@ -109,14 +109,14 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            placeholder="your.email@example.com"
+            placeholder={t('contact.form.email.placeholder')}
           />
         </div>
 
         <div>
           <label htmlFor="message" className="block mb-2 text-sm font-medium">
             <BaseText fontSize="sm" color="foreground">
-              {t('contact.form.message')}
+              {t('contact.form.message.label')}
             </BaseText>
           </label>
           <textarea
@@ -127,12 +127,12 @@ export default function ContactForm() {
             required
             rows={5}
             className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all duration-300"
-            placeholder="Your message here..."
+            placeholder={t('contact.form.message.placeholder')}
           />
         </div>
 
         <div className="text-center">
-          <BaseButton>{isSubmitting ? 'Sending...' : 'Send Message'}</BaseButton>
+          <BaseButton>{isSubmitting ? t('contact.sending') : t('contact.sendMessage')}</BaseButton>
         </div>
       </form>
     </Card>
