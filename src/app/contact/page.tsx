@@ -1,9 +1,10 @@
 'use client';
 
-import BaseContactCard from "@/components/cards/BaseContactCard";
-import BaseText from "@/components/text/BaseText";
-import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import BaseContactCard from '@/components/cards/BaseContactCard';
+import BaseText from '@/components/text/BaseText';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import ContactForm from '@/components/layouts/ContactForm';
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -15,30 +16,20 @@ export default function Contact() {
         transition={{ duration: 0.7 }}
         className="text-center px-4 sm:py-16 text-foreground"
       >
-        <BaseText fontSize="xxxl" justify="center" color="text-white" className="mb-6">
-          {t("contact.title")}
+        <BaseText fontSize="xxxl" justify="center" color="text-white" className="mb-6" fontWeight="semibold">
+          {t('contact.title')}
         </BaseText>
-        <BaseText className="mt-6" fontSize="md" justify="center" color="muted">
-          {t("contact.description")}
+        <BaseText className="mt-6 mb-12" fontSize="md" justify="center" color="muted" lineHeight="relaxed">
+          {t('contact.description')}
         </BaseText>
-        <BaseContactCard 
-          className="mt-6"
-          label="Email" 
-          link="rafaelgalazzi@ucl.br"
-        >
-        </BaseContactCard>
-        <BaseContactCard 
-          className="mt-6"
-          label="Github" 
-          link="https://github.com/rafaelgalazzi"
-        >
-        </BaseContactCard>
-        <BaseContactCard 
-          className="mt-6"
-          label="Linkedin" 
-          link="https://www.linkedin.com/in/rafael-galazzi-786487130/"
-        >
-        </BaseContactCard>
+
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-16">
+          <BaseContactCard label="Email" link="rafaelgalazzi@hotmail.com" />
+          <BaseContactCard label="Github" link="https://github.com/rafaelgalazzi" />
+          <BaseContactCard label="Linkedin" link="https://www.linkedin.com/in/rafael-galazzi-786487130/" />
+        </div>
+
+        <ContactForm />
       </motion.section>
     </>
   );

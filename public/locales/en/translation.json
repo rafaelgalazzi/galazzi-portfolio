@@ -12,11 +12,11 @@
   },
   "footer": {
     "copy": "© {{year}} Rafael Galazzi. All rights reserved.",
-      "social": {
-        "github": "GitHub",
-        "linkedin": "LinkedIn",
-        "contact": "Contact"
-      }
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "contact": "Contact"
+    }
   },
   "about": {
     "title": "About Me",
@@ -92,11 +92,57 @@
     "next": "Next"
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "description": "Here are some of the projects I have worked on. Each project represents a unique challenge and solution in different domains.",
+    "project1": {
+      "title": "Easy Access",
+      "description": "Complete access management solution for university environments with real-time monitoring and analytics."
+    },
+    "project2": {
+      "title": "Tohodenki",
+      "description": "Comprehensive financial management platform for companies, from expense control to investment tracking."
+    },
+    "project3": {
+      "title": "Cootraporter",
+      "description": "Real-time transportation tracking system with route optimization and fleet management."
+    },
+    "project4": {
+      "title": "Medme-Hilab",
+      "description": "Laboratory management system with appointment scheduling and results tracking."
+    },
+    "project5": {
+      "title": "Octo",
+      "description": "Platform for guiding companies on compliance with the LGPD (Brazilian General Data Protection Law)."
+    },
+    "project6": {
+      "title": "House DO",
+      "description": "Real estate platform for listing properties with virtual tours and market analysis tools."
+    },
+    "project7": {
+      "title": "Egnex/Nexomobi Charge Control",
+      "description": "App and dashboard for controlling electric vehicle battery charging and monitoring IoT controllers."
+    }
   },
   "contact": {
     "title": "Contact",
     "description": "I'm always open to new opportunities and collaborations. Don't hesitate to get in touch with me.",
-    "cta": "Send a message"
+    "cta": "Send a message",
+    "touch": "Get in touch",
+    "opportunities": "Have a project in mind or want to discuss potential opportunities? Feel free to reach out!",
+    "messageSent": "Message sent successfully! I'll get back to you soon.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your.email@example.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message here..."
+      }
+    }
   }
 }

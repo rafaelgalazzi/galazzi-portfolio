@@ -10,20 +10,12 @@ interface BaseDropdownProps {
   onClickOutside?: () => void;
 }
 
-export default function BaseDropdown({
-  isOpen,
-  children,
-  className = '',
-  onClickOutside,
-}: BaseDropdownProps) {
+export default function BaseDropdown({ isOpen, children, className = '', onClickOutside }: BaseDropdownProps) {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         onClickOutside?.();
       }
     }

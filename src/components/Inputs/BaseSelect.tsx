@@ -19,7 +19,7 @@ interface SelectProps {
 
 export default function BaseSelect({ label, value, options, onChange }: SelectProps) {
   const [open, setOpen] = useState(false);
-  const selected = options.find(opt => opt.value === value);
+  const selected = options.find((opt) => opt.value === value);
 
   const handleSelect = (val: string) => {
     onChange(val);
@@ -32,7 +32,7 @@ export default function BaseSelect({ label, value, options, onChange }: SelectPr
 
       <button
         type="button"
-        onClick={() => setOpen(prev => !prev)}
+        onClick={() => setOpen((prev) => !prev)}
         className="px-3 py-2 border border-border bg-dropdown text-left rounded-md flex justify-between items-center gap-2 w-full"
       >
         <span className="truncate">{selected?.label || 'Selecionar'}</span>
@@ -41,7 +41,7 @@ export default function BaseSelect({ label, value, options, onChange }: SelectPr
 
       <BaseDropdown isOpen={open} onClickOutside={() => setOpen(false)}>
         <ul className="flex flex-col text-sm">
-          {options.map(option => (
+          {options.map((option) => (
             <li key={option.value}>
               <button
                 type="button"

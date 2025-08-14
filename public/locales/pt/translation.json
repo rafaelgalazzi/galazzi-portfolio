@@ -1,22 +1,22 @@
 {
-    "hero": {
-        "title": "Olá, sou Rafael Galazzi",
-        "description": "Desenvolvedor Full-Stack apaixonado por criar experiências digitais bonitas e acessíveis. Sempre em busca de novos desafios e oportunidades para aprender e crescer como desenvolvedor profissional.",
-        "cta": "Fale comigo"
-    },
-    "nav": {
-        "home": "Home",
-        "about": "Sobre",
-        "projects": "Projetos",
-        "contact": "Contato"
-    },
-    "footer": {
-        "copy": "© {{year}} Rafael Galazzi. Todos os direitos reservados.",
-        "social": {
-            "github": "GitHub",
-            "linkedin": "LinkedIn",
-            "contact": "Contato"
-        }
+  "hero": {
+    "title": "Olá, sou Rafael Galazzi",
+    "description": "Desenvolvedor Full-Stack apaixonado por criar experiências digitais bonitas e acessíveis. Sempre em busca de novos desafios e oportunidades para aprender e crescer como desenvolvedor profissional.",
+    "cta": "Fale comigo"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "footer": {
+    "copy": "© {{year}} Rafael Galazzi. Todos os direitos reservados.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "contact": "Contato"
+    }
   },
   "about": {
     "title": "About Me",
@@ -92,11 +92,57 @@
     "next": "Próximo"
   },
   "projects": {
-    "title": "Projetos"
+    "title": "Projetos",
+    "description": "Aqui são alguns dos projetos que trabalhei. Cada projeto representa uma desafio exclusivo e solução em diferentes domínios.",
+    "project1": {
+      "title": "Easy Access",
+      "description": "Solução completa de gerenciamento de acesso para ambientes universitários com monitoramento em tempo real e análises."
+    },
+    "project2": {
+      "title": "Tohodenki",
+      "description": "Plataforma de gerenciamento financeiro completo para as empresas, desde o controle de gastos ate o acompanhamento de investimentos."
+    },
+    "project3": {
+      "title": "Cootraporter",
+      "description": "Sistema de rastreamento de transporte em tempo real com otimização de rota e gerenciamento de frotas."
+    },
+    "project4": {
+      "title": "Medme-Hilab",
+      "description": "Sistema de gestão de laboratórios com agendamento de consultas e acompanhamento de resultados."
+    },
+    "project5": {
+      "title": "Octo",
+      "description": "Plataforma para orientação de empresas para leis de proteção de dados pessoais LGPD."
+    },
+    "project6": {
+      "title": "House DO",
+      "description": "Plataforma de imóveis para listagem de imóveis com tours virtuais e ferramentas de análises de mercado."
+    },
+    "project7": {
+      "title": "Egnex/Nexomobi Charge Control",
+      "description": "Aplicativo e Dashboard para controle de carregamento de baterias de veículos eletricos e monitoramento de controladores IoT."
+    }
   },
   "contact": {
     "title": "Contato",
-    "description": "Estou sempre aberto para novas oportunidades e colaborações. Não hesite em me contatar.",
-    "cta": "Enviar mensagem"
+    "description": "Estou sempre aberto(a) a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato comigo a qualquer momento.",
+    "cta": "Enviar mensagem",
+    "touch": "Entre em contato",
+    "opportunities": "Tem um projeto em mente ou quer explorar possíveis oportunidades? Ficarei feliz em ouvir você!",
+    "messageSent": "Sua mensagem foi enviada com sucesso! Em breve retornarei o contato.",
+    "form": {
+      "name": {
+        "label": "Nome",
+        "placeholder": "Seu nome"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your.email@example.com"
+      },
+      "message": {
+        "label": "Mensagem",
+        "placeholder": "Sua mensagem aqui..."
+      }
+    }
   }
 }

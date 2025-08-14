@@ -28,15 +28,7 @@ export default function BaseIcon({
     return null;
   }
 
-  const icon = (
-    <DynamicIcon
-      name={name}
-      size={size}
-      fill={fill ?? 'none'}
-      color={color ?? 'currentColor'}
-      {...props}
-    />
-  );
+  const icon = <DynamicIcon name={name} size={size} fill={fill ?? 'none'} color={color ?? 'currentColor'} {...props} />;
 
   if (!circle) {
     return icon;
@@ -45,11 +37,11 @@ export default function BaseIcon({
   return (
     <div
       className={`inline-flex items-center justify-center rounded-full bg-button text-button-foreground hover:opacity-70 transition-colors duration-300 ${className}`}
-      style={{ 
+      style={{
         backgroundColor: `var(--${bgColor})`,
         width: size + 16,
-        height: size + 16 
-        }}
+        height: size + 16,
+      }}
     >
       {icon}
     </div>

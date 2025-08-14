@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 interface BaseContactCardProps {
   link: string;
@@ -7,12 +7,7 @@ interface BaseContactCardProps {
   children?: React.ReactNode;
 }
 
-export default function BaseContactCard({
-  link,
-  label,
-  className = "",
-  children,
-}: BaseContactCardProps) {
+export default function BaseContactCard({ link, label, className = '', children }: BaseContactCardProps) {
   const [copied, setCopied] = useState(false);
 
   async function handleCopy() {
@@ -34,13 +29,11 @@ export default function BaseContactCard({
       title="Copiar link"
       role="button"
       tabIndex={0}
-      onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && handleCopy()}
-      style={{ userSelect: "none" }}
+      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && handleCopy()}
+      style={{ userSelect: 'none' }}
     >
       <div className="flex-1 min-w-0">
-        {label && (
-          <div className="font-semibold text-[var(--white)] mb-1 truncate">{label}</div>
-        )}
+        {label && <div className="font-semibold text-[var(--white)] mb-1 truncate">{label}</div>}
         <div className="text-sm text-[var(--muted)] select-all hidden md:block">{link}</div>
         {children}
       </div>
@@ -54,12 +47,28 @@ export default function BaseContactCard({
       >
         {copied ? (
           // Ícone de check
-          <svg width="20" height="20" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg
+            width="20"
+            height="20"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
             <polyline points="4 11 8 15 16 6" />
           </svg>
         ) : (
           // Ícone de copiar arquivo (apenas borda)
-          <svg width="20" height="20" fill="none" stroke="var(--muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg
+            width="20"
+            height="20"
+            fill="none"
+            stroke="var(--muted)"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
             <rect x="9" y="9" width="7" height="7" rx="2" />
             <path d="M15 9V7A2 2 0 0 0 13 5H7A2 2 0 0 0 5 7v6a2 2 0 0 0 2 2h2" />
           </svg>
