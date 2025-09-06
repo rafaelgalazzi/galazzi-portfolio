@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! This is a modern, responsive portfolio built with Next.js 15, showcasing my work as a Full-Stack Developer.
 
+You can check the page here: https://galazzi-portfolio.vercel.app/
+
 ## About Me
 
 I'm Rafael Galazzi, a passionate Full-Stack Developer with experience building high-performance web applications across real estate, education, and healthcare sectors. I specialize in TypeScript, React.js, Vue.js, and Node.js with a focus on clean and scalable architecture.
