@@ -32,18 +32,29 @@ export default function ContactForm() {
     setSubmitError('');
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
 
-      setSubmitSuccess(true);
-      setTimeout(() => setSubmitSuccess(false), 5000);
+      const result = await response.json();
+
+      if (response.ok) {
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+
+        setSubmitSuccess(true);
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      } else {
+        setSubmitError(result.error || 'Failed to send message. Please try again.');
+      }
     } catch (error) {
       console.error(error);
       setSubmitError('Failed to send message. Please try again.');
@@ -53,8 +64,8 @@ export default function ContactForm() {
   };
 
   return (
-    <Card className="max-w-2xl mx-auto">
-      <BaseText fontSize="xxl" fontWeight="semibold" color="primary" className="mb-2 text-center">
+    <Card id='contactForm' className="max-w-2xl mx-auto">
+      <BaseText fontSize="xxxl" fontWeight="semibold" color="primary" className="mb-2 text-center">
         {t('contact.touch')}
       </BaseText>
 

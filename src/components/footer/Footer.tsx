@@ -43,7 +43,7 @@ export default function Footer() {
           </motion.div>
 
           <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.9 }}>
-            <BaseLink href="mailto:rafaelgalazzi@hotmail.com" underline={false}>
+            <BaseLink href="mailto:rafaelgalazzi.dev@gmail.com" underline={false}>
               <BaseIcon name="mail" size={28} circle />
             </BaseLink>
           </motion.div>

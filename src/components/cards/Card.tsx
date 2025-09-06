@@ -2,11 +2,13 @@ interface CardProps {
   children: React.ReactNode;
   className?: string;
   hoverEffect?: boolean;
+  id?: string;
 }
 
-export default function Card({ children, className = '', hoverEffect = false }: CardProps) {
+export default function Card({ children, className = '', hoverEffect = false, id = '' }: CardProps) {
   return (
     <div
+      id={id}
       className={`
       bg-card-bg 
       border 

@@ -24,7 +24,7 @@ export default function Contact() {
         </BaseText>
 
         <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-16">
-          <BaseContactCard label="Email" link="rafaelgalazzi@hotmail.com" />
+          <BaseContactCard label="Email" link="rafaelgalazzi.dev@gmail.com" />
           <BaseContactCard label="Github" link="https://github.com/rafaelgalazzi" />
           <BaseContactCard label="Linkedin" link="https://www.linkedin.com/in/rafael-galazzi-786487130/" />
         </div>

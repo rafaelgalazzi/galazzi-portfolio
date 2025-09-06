@@ -4,9 +4,14 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import BaseText from './text/BaseText';
 import BaseButton from './buttons/BaseButton';
+import { useRouter } from 'next/navigation';
 
 export default function HeroSection() {
   const { t } = useTranslation();
+  const router = useRouter();
+  function goToContactPage() {
+    router.push('/contact#contactForm');
+  }
 
   return (
     <motion.section
@@ -74,7 +79,7 @@ export default function HeroSection() {
           }}
           whileTap={{ scale: 0.95 }}
         >
-          <BaseButton> {t('hero.cta')} </BaseButton>
+          <BaseButton onClick={goToContactPage}> {t('hero.cta')} </BaseButton>
         </motion.button>
       </motion.div>
     </motion.section>
