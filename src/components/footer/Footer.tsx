@@ -5,9 +5,15 @@ import { useTranslation } from 'react-i18next';
 import BaseText from '../text/BaseText';
 import BaseIcon from '../icons/BaseIcon';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 export default function Footer() {
   const { t } = useTranslation();
+
+    const router = useRouter();
+    function goToContactPage() {
+      router.push('/contact#contactForm');
+    }
 
   return (
     <footer className="w-full border-t border-border px-4 py-3 text-sm text-center sticky bottom-0 bg-footer text-foreground">
@@ -43,9 +49,9 @@ export default function Footer() {
           </motion.div>
 
           <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.9 }}>
-            <BaseLink href="mailto:rafaelgalazzi.dev@gmail.com" underline={false}>
+            <div className='cursor-pointer' onClick={goToContactPage}>
               <BaseIcon name="mail" size={28} circle />
-            </BaseLink>
+            </div>
           </motion.div>
         </motion.div>
       </div>

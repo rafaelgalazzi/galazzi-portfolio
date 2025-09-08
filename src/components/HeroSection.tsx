@@ -72,7 +72,7 @@ export default function HeroSection() {
         }}
         className="mt-10 flex justify-center"
       >
-        <motion.button
+        <motion.div
           whileHover={{
             scale: 1.05,
             boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
@@ -80,7 +80,7 @@ export default function HeroSection() {
           whileTap={{ scale: 0.95 }}
         >
           <BaseButton onClick={goToContactPage}> {t('hero.cta')} </BaseButton>
-        </motion.button>
+        </motion.div>
       </motion.div>
     </motion.section>
   );
